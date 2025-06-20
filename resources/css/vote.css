@@ -1,0 +1,171 @@
+/* === Main Layout === */
+.vote-main {
+  padding: 100px 2rem 4rem;
+  background-color: #0d0d0d;
+  font-family: 'Bebas Neue', sans-serif;
+  min-height: 100vh;
+  color: #ffffff;
+}
+
+/* === Section Header with Icon === */
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.section-icon {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 5px #5292f3);
+}
+
+/* === Section Titles === */
+.section-heading {
+  font-size: 2.4rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.15);
+}
+
+/* === Voting Card Containers === */
+.vote-section {
+  background-color: #1b1b1b;
+  padding: 2.5rem 3rem;
+  margin-bottom: 4rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #2a2a2a;
+  transition: transform 0.3s ease;
+}
+
+.vote-section:hover {
+  transform: scale(1.01);
+}
+
+/* === Categories === */
+.vote-category {
+  margin-bottom: 2rem;
+}
+
+.vote-category h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  font-weight: normal;
+  border-left: 4px solid #5292f3;
+  padding-left: 1rem;
+}
+
+.vote-category p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #f0f0f0;
+}
+
+/* === Labels and Inputs === */
+label {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+  padding: 0.4rem 0.7rem;
+  border-radius: 0.4rem;
+  color: #dddddd;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+label:hover {
+  background-color: #292929;
+  color: #ffffff;
+}
+
+input[type="radio"] {
+  margin-right: 0.6rem;
+  transform: scale(1.1);
+  accent-color: #5292f3;
+}
+
+/* === Submit Buttons === */
+.submit-wrapper {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.submit-button {
+  background-color: #5292f3;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(82, 146, 243, 0.4);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-button:hover {
+  background-color: #3a78cc;
+  transform: translateY(-2px);
+}
+
+.submit-button.optional {
+  background-color: #444;
+  color: #eee;
+}
+
+.submit-button.optional:hover {
+  background-color: #666;
+  color: #fff;
+}
+
+/* === Confirmation Message === */
+.confirmation-message {
+  display: none;
+  margin-top: 1.5rem;
+  color: #7ae57a;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .section-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-heading {
+    font-size: 2rem;
+  }
+
+  .vote-section {
+    padding: 1.5rem;
+  }
+
+  label {
+    font-size: 1rem;
+  }
+
+  .submit-button {
+    font-size: 1rem;
+    padding: 0.6rem 1.5rem;
+  }
+}
+

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+  <meta charset="UTF-8">
+  <title>NBA Website</title>
+  <link rel="stylesheet" href="./resources/css/reset.css">
+  <link rel="stylesheet" href="./resources/css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav>
+    <div id="left">
+      <a href="index.html"><img id="logo" src="./resources/img/NBA-Logo-700x394.png" alt="NBA Logo"></a>
+      <p>National Basketball Association</p>
+    </div>
+    <div id="mobile-menu-toggle">&#9776;</div>  
+    <div id="right">
+      <ul>
+        <li><a href="news.html">News</a></li>
+        <li><a href="fixtures.html">Fixtures</a></li>
+        <li><a href="vote.html">Vote</a></li>
+        <li><a href="sign-up.html">Sign Up</a></li>
+        <li><a href="login.html">Log In</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+<section class="main-banner">
+  <div class="banner-gradient-top"></div>
+  <div class="banner-gradient-bottom"></div>
+  
+  <div class="banner-text">
+    <div class="announcement">
+      <h3>Chicago Bulls<br>finally beat<br>Heat to tie the series <span>2-2</span></h3>
+      <p>The Chicago Bulls, led by <span>Derrick Rose</span> and <span>Joakim Noah</span>, delivered a dominating away performance.</p>
+    </div>
+  </div>
+</section>
+
+        <!-- News Previews -->
+
+        <section class="news-previews">
+         <h2 class="section-title">📰 News & Updates</h2>
+         <div class="preview-slider">
+          <button class="arrow left">&#10094;</button>
+
+          <div class="preview-track">
+            <article class="preview-card">
+              <img src="./resources/img/bullsgame1.jpg" alt="Bulls vs Heat">
+              <div class="preview-text">
+                <h4>Bulls smash the Heat, tie series 2-2</h4>
+                <p>52 combined points from D Rose and Joakim Noah give the Bulls an impressive win away from home.</p>
+                <a href="news.html">Read more</a>
+              </div>
+            </article>
+
+            <article class="preview-card">
+              <img src="./resources/img/thunderlakers.jpg" alt="Curry game-winner">
+              <div class="preview-text">
+                <h4>Thunder Outlast Lakers in Double Overtime Thriller</h4>
+                <p>Kevin Durant’s 40 points lift OKC past Los Angeles in an instant classic.</p>
+                <a href="news.html">Read more</a>
+              </div>
+            </article>
+
+            <article class="preview-card">
+              <img src="./resources/img/celticssixers.jpg" alt="Magic vs Mavericks">
+              <div class="preview-text">
+                <h4>Celtics Hold Off 76ers in Gritty Game 5 Battle</h4>
+                <p>Paul Pierce leads Boston with 24 points as Celtics go up 3-2 in the series.</p>
+                <a href="news.html">Read more</a>
+              </div>
+            </article>
+
+            <article class="preview-card">
+              <img src="./resources/img/odom.jpg" alt="LeBron James">
+              <div class="preview-text">
+                <h4>Clippers Acquire Lamar Odom in 4-Team Trade</h4>
+                <p>Odom returns to LA as the Clippers look to bolster their bench depth.</p>
+                <a href="news.html">Read more</a>
+              </div>
+            </article>
+
+            <article class="preview-card">
+              <img src="./resources/img/harden.JPG" alt="Derrick Rose comeback">
+              <div class="preview-text">
+                <h4>Rockets Land Harden in Blockbuster Deal with Thunder</h4>
+                <p>OKC parts ways with James Harden, receiving Kevin Martin and picks in return.</p>
+                <a href="news.html">Read more</a>
+              </div>
+            </article>
+
+            <article class="preview-card">
+              <img src="./resources/img/nash.jpg" alt="Curry shooting">
+              <div class="preview-text">
+                <h4>Steve Nash Joins Kobe in Purple and Gold</h4>
+                <p>Lakers trade for two-time MVP Steve Nash in surprise offseason move.</p>
+               <a href="news.html">Read more</a>
+              </div>
+            </article>
+
+          </div>
+          <button class="arrow right">&#10095;</button>
+         </div>
+        </section>
+
+
+        <!-- MVP Top Players -->
+
+<section class="top-players">
+  <h2 class="section-title">🏆 24/25 Season Awards - Top 3</h2>
+
+  <div class="award-controls">
+    <button class="arrow left award-arrow">&#10094;</button>
+
+    <!-- MVP -->
+    <div class="award-category active">
+      <h3 class="top-players-header">Most Valuable Player</h3>
+      <div class="award-cards">
+        <div class="player-card">
+          <img src="./resources/img/derrickmvp.jpg" alt="Derrick Rose">
+          <div class="player-info">
+            <h3>Derrick Rose</h3>
+            <p>Team: Chicago Bulls</p>
+            <p>PPG: 26.6 | RPG: 4.9 | APG: 8.1</p>
+            <p class="reason">Rose is leading his team with explosive drives and high energy. A historic comeback season!</p>
+          </div>
+        </div>
+
+        <div class="player-card">
+          <img src="./resources/img/lebronmvp.jpg" alt="LeBron James">
+          <div class="player-info">
+            <h3>LeBron James</h3>
+            <p>Team: Miami Heat</p>
+            <p>PPG: 28.3 | RPG: 8.1 | APG: 6.9</p>
+            <p class="reason">LeBron remains dominant in scoring and leadership at age 39.</p>
+          </div>
+        </div>
+
+        <div class="player-card">
+          <img src="./resources/img/currymvp.jpg" alt="Stephen Curry">
+          <div class="player-info">
+            <h3>Stephen Curry</h3>
+            <p>Team: Golden State Warriors</p>
+            <p>PPG: 25.3 | RPG: 4.2 | APG: 8.9</p>
+            <p class="reason">Curry continues to redefine shooting and offense with elite efficiency.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Coach of the Year -->
+    <div class="award-category">
+      <h3 class="top-players-header">Coach of the Year</h3>
+      <div class="award-cards">
+        <div class="player-card">
+          <img src="./resources/img/tomthibodeau.jpg" alt="Tom Thibodeau">
+          <div class="player-info">
+            <h3>Tom Thibodeau</h3>
+            <p>Team: Chicago Bulls</p>
+            <p class="reason">Transformed the Bulls into a defensive powerhouse.</p>
+          </div>
+        </div>
+
+        <div class="player-card">
+          <img src="./resources/img/stevekerr.jpg" alt="Erik Spoelstra">
+          <div class="player-info">
+            <h3>Erik Spoelstra</h3>
+            <p>Team: Miami Heat</p>
+            <p class="reason">Managed star talent with tactical precision and playoff consistency.</p>
+          </div>
+        </div>
+
+        <div class="player-card">
+          <img src="./resources/img/greggpopovic.jpg" alt="Gregg Popovich">
+          <div class="player-info">
+            <h3>Gregg Popovich</h3>
+            <p>Team: San Antonio Spurs</p>
+            <p class="reason">Mastermind behind Spurs' continued excellence and player development.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Defensive Player of the Year -->
+    <div class="award-category">
+      <h3 class="top-players-header">Defensive Player of the Year</h3>
+      <div class="award-cards">
+        <div class="player-card">
+          <img src="./resources/img/joakim.jpg" alt="Joakim Noah">
+          <div class="player-info">
+            <h3>Joakim Noah</h3>
+            <p>Team: Chicago Bulls</p>
+            <p>RPG: 10.5 | BPG: 2.1</p>
+            <p class="reason">Relentless rim protector and team defensive anchor.</p>
+          </div>
+        </div>
+
+        <div class="player-card">
+          <img src="./resources/img/howard.jpg" alt="Dwight Howard">
+          <div class="player-info">
+            <h3>Dwight Howard</h3>
+            <p>Team: Orlando Magic</p>
+            <p>RPG: 13.0 | BPG: 2.4</p>
+            <p class="reason">Elite shot blocker and rebounder, dominant in the paint.</p>
+          </div>
+        </div>
+
+        <div class="player-card">
+          <img src="./resources/img/kawhi.jpg" alt="Kawhi Leonard">
+          <div class="player-info">
+            <h3>Kawhi Leonard</h3>
+            <p>Team: San Antonio Spurs</p>
+            <p>SPG: 1.9 | BPG: 0.8</p>
+            <p class="reason">Perimeter lockdown defender with incredible anticipation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Rookie of the Year (2012) -->
+    <div class="award-category">
+      <h3 class="top-players-header">Rookie of the Year</h3>
+      <div class="award-cards">
+        <div class="player-card">
+          <img src="./resources/img/kyrie.jpg" alt="Kyrie Irving">
+          <div class="player-info">
+            <h3>Kyrie Irving</h3>
+            <p>Team: Cleveland Cavaliers</p>
+            <p>PPG: 18.5 | APG: 5.4</p>
+            <p class="reason">Dynamic rookie year with incredible handles and scoring flair.</p>
+          </div>
+        </div>
+
+        <div class="player-card">
+          <img src="./resources/img/klay.jpg" alt="Klay Thompson">
+          <div class="player-info">
+            <h3>Klay Thompson</h3>
+            <p>Team: Golden State Warriors</p>
+            <p>PPG: 12.5 | 3P%: 41.4</p>
+            <p class="reason">Deadly shooter showing promise as part of future Splash Brothers.</p>
+          </div>
+        </div>
+
+        <div class="player-card">
+          <img src="./resources/img/kemba.jpg" alt="Kemba Walker">
+          <div class="player-info">
+            <h3>Kemba Walker</h3>
+            <p>Team: Charlotte Bobcats</p>
+            <p>PPG: 12.1 | APG: 4.4</p>
+            <p class="reason">Quick and fearless guard bringing energy to a rebuilding team.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="arrow right award-arrow">&#10095;</button>
+  </div>
+</section>
+      
+<section class="highlight-videos">
+  <h2 class="section-title">🎬 Top Game Highlights</h2>
+  <div class="video-wrapper">
+    
+    <div class="video-card">
+      <iframe 
+        src="https://www.youtube.com/embed/2PUMoAZ8TPs" 
+        title="Bulls vs Heat Highlights" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+      <p>Bulls vs Heat – Game 4 Thriller</p>
+    </div>
+
+    <div class="video-card">
+      <iframe 
+        src="https://www.youtube.com/embed/XT_TS5C9_-Q" 
+        title="Warriors vs Lakers Highlights" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+      <p>Thunder vs Lakers - Game 3 Highlights</p>
+    </div>
+
+    <div class="video-card">
+      <iframe 
+        src="https://www.youtube.com/embed/esPR2bsxET0" 
+        title="Celtics vs Sixers Highlights" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+      <p>Celtics vs Sixers - Game 4 Highlights</p>
+    </div>
+
+  </div>
+</section>
+
+
+        
+<!-- Upcoming Fixtures Section -->
+        <section class="fixtures-section">
+           <h2 class="section-title">📅 Upcoming Fixtures</h2>
+           <ul class="fixtures-list">
+             <li><strong>Bulls vs. Heat</strong> – June 5, 2025</li>
+             <li><strong>Warriors vs. Lakers</strong> – June 7, 2025</li>
+             <li><strong>Mavericks vs. Magic</strong> – June 9, 2025</li>
+           </ul>
+        </section>
+
+<!-- Call to Action Section -->
+        <section class="cta-section">
+           <h2 class="section-title">🏀 Join the Community</h2>
+           <p class="cta-text">Are you a passionate NBA fan? Be part of our growing fan base. Get the latest news, vote for MVPs, and more!</p>
+           <a href="sign-up.html" class="cta-button">Sign Up Now</a>
+        </section>       
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-about">
+        <h4>About NBA</h4>
+        <p>The National Basketball Association (NBA) is the premier professional basketball league in the United States and Canada, featuring the world's top players and teams.</p>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p>Phone: +1 (800) 123-4567</p>
+        <p>Email: info@nba.com</p>
+        <p>Address: 123 NBA Street, Basketball City, USA</p>
+      </div>
+
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <p>
+          <a href="#" aria-label="NBA Facebook">Facebook</a> |
+          <a href="#" aria-label="NBA Twitter">Twitter</a> |
+          <a href="#" aria-label="NBA Instagram">Instagram</a>
+        </p>
+      </div>
+    </div>
+
+    <p class="footer-copy">&copy; 2025 NBA. All rights reserved.</p>
+  </footer>
+
+  <script src="./resources/js/main.js"></script>
+  <script src="./resources/js/index.js"></script>  
+</body>
+</html>

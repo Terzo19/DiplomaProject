@@ -1,0 +1,302 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary: #3250ff;
+  --accent: #5279c3;
+  --light-text: #f0f0f0;
+  --muted-text: #aaa;
+  --bg-dark: #0d0d0d;
+  --bg-darker: #111;
+}
+
+body {
+  font-family: 'Bebas Neue', sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--light-text);
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 69px;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 2;
+  padding: 0 1rem;
+  border-bottom: 2px solid var(--accent);
+}
+
+nav.scrolled {
+  border-bottom: 2px solid var(--primary);
+}
+
+#left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#logo {
+  max-height: 50px;
+}
+
+#right ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+#right ul li a {
+  font-size: 1.4rem;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+#right ul li a:hover,
+#right ul li a:active {
+  color: var(--accent);
+  text-shadow: 0 0 5px var(--accent), 0 0 10px var(--primary);
+}
+
+#container-banner {
+  margin-top: 69px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#banner {
+  background: url(../img/Derrick-Rose-.jpg) center/cover no-repeat;
+  width: 100%;
+  height: 700px;
+}
+
+.topside {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(var(--bg-dark), transparent);
+}
+
+.teamname h2 {
+  font-size: 4rem;
+  color: white;
+  text-shadow: 0 0 10px var(--primary);
+}
+
+.logocontainer img {
+  max-height: 9.5rem;
+}
+
+.downside {
+  height: 50%;
+  background: linear-gradient(transparent, var(--primary));
+}
+
+.news-section,
+.news-previews,
+.top-players {
+  background-color: var(--bg-darker);
+}
+
+.news-section {
+  padding: 3rem 0 2rem;
+}
+
+.news-title {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 0.6rem 2.5rem;
+  border-radius: 1.2rem;
+  font-size: 2.8rem;
+  color: white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  box-shadow: 0 0 12px rgba(82, 121, 195, 0.6);
+  transition: background-color 0.3s ease;
+}
+
+.news-title:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 20px rgba(82, 121, 195, 0.9);
+}
+
+.resultbanner {
+  background: url(../img/617f3-16675973481347-1920.jpg) center/cover no-repeat;
+  height: 52rem;
+  display: flex;
+}
+
+.leftsbanner {
+  flex: 3;
+  background: linear-gradient(transparent, black);
+}
+
+.rightsbanner {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(transparent, black);
+  color: white;
+}
+
+.rightsbanner h3 {
+  font-size: 6rem;
+}
+
+.rightsbanner p {
+  font-size: 1.1rem;
+  letter-spacing: 0.15rem;
+  line-height: 1.5;
+}
+
+.news-previews {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.preview-card {
+  background-color: #1d1d1d;
+  width: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  transition: transform 0.2s;
+}
+
+.preview-card:hover {
+  transform: translateY(-5px);
+}
+
+.preview-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.preview-text {
+  padding: 1rem;
+  color: #eee;
+}
+
+.preview-text h4 {
+  color: #fae1e1;
+  margin-bottom: 0.5rem;
+}
+
+.preview-text a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.top-players {
+  padding: 4rem 2rem;
+}
+
+.top-players-header {
+  font-size: 3rem;
+  color: var(--accent);
+  text-shadow: 0 0 10px var(--primary);
+  margin-bottom: 3rem;
+}
+
+.player-card {
+  display: flex;
+  margin: 1rem auto;
+  max-width: 800px;
+  background-color: #111;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+  transition: transform 0.3s;
+}
+
+.player-card:hover {
+  transform: scale(1.02);
+}
+
+.player-card img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.player-info {
+  flex: 1;
+  padding: 1rem;
+  text-align: left;
+}
+
+.player-info h3 {
+  font-size: 1.8rem;
+  color: #fae1e1;
+}
+
+.reason {
+  font-style: italic;
+  color: var(--muted-text);
+}
+
+footer {
+  background-color: #000;
+  color: var(--muted-text);
+  padding: 2.5rem 1rem 1rem;
+  font-family: Cambria, Georgia, serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1100px;
+  margin: 0 auto 1.5rem;
+  gap: 2rem;
+  text-align: left;
+}
+
+footer h4 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.6rem;
+  margin-bottom: 0.8rem;
+  letter-spacing: 0.08rem;
+  color: white;
+}
+
+footer p, footer a {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+footer a {
+  color: #87aefb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+footer a:hover {
+  color: #ffffff;
+}
+
+.footer-copy {
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 1rem;
+}
