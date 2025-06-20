@@ -680,3 +680,30 @@ footer a:hover {
     width: 100%;
   }
 }
+
+/* Responsive main banner */
+
+@media (max-width: 768px) {
+  .banner-text {
+    padding: 2rem;
+    max-width: 100%;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 100%;
+  }
+
+  .announcement h3 {
+    font-size: 2.2rem;
+  }
+
+  .announcement p {
+    font-size: 1rem;
+  }
+
+  .main-banner {
+    height: 360px;
+  }
+}
