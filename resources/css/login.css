@@ -9,6 +9,7 @@
   box-shadow: 0 0 10px rgba(50, 80, 255, 0.3);
   border-radius: 1rem;
   text-align: left;
+  width: 90%;
 }
 
 .login-container h1 {
